@@ -275,3 +275,25 @@
 
 })(jQuery);
 
+// S'assurer que l'attribut aria-expanded change correctement
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggler = document.querySelector('.navbar-toggler');
+  const navCollapse = document.querySelector('#ftco-nav');
+  
+  if (navToggler && navCollapse) {
+    navToggler.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+    });
+    
+    // Fermer le menu quand on clique sur un lien
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        if (window.innerWidth < 992) {
+          navToggler.click();
+        }
+      });
+    });
+  }
+});
