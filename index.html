@@ -2,6 +2,115 @@
 <html lang="en">
   <head>
     <title>JAD BOUTAS</title>
+	 <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background: #000;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .subheading {
+            color: #D4AF37;
+            font-size: 50px;
+			font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .name {
+            color: #D4AF37;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #D4AF37;
+            color: #D4AF37;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #B8941F;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 196, 0, 0.8);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            .btn {
+                padding: 12px 30px;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 14px;
+            }
+
+            .subheading {
+                font-size: 12px;
+            }
+        }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -46,27 +155,20 @@
 	      </div>
 	    </div>
 	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" ">
-	          		<div class="overlay"></div>
-	          	</div>
-		         <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>JAD BOUTASBOULTAOUI</span></h1>
-			            <h2 class="mb-4">A GRAPHIC DESIGNER</h2>
-			            <p><a href="images/SPIPA7OS/Jad Boutasboultaoui CV.pdf" download="Jad_Boutasboultaoui_CV.pdf" class="btn btn-primary py-3 px-4">Hire me</a> </p>
-		            </div>
-		          </div>
-	        	<!-- </div>
-	        </div> -->
-	      </div>
-	    </div>
+	   <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="subheading">Hello!</span>
+                <h1>I'm <span class="name">JAD BOUTASBOULTAOUI</span></h1>
+                <h2>A GRAPHIC DESIGNER</h2>
+                <a href="#" class="btn" style="color: #D4AF37;color: rgb(0, 0, 0) !important;
+    background: rgb(255, 189, 57);
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(255, 189, 57) !important;
+    border-image: initial !important;">Hire Me</a>
+            </div>
+        </div>
     </section>
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
@@ -105,7 +207,7 @@ in design and business.</p>
 	                <span class="number" data-number="120">0</span>
 	                <span>Project complete</span>
                 </p>
-                <p><a href="images/SPIPA7OS/Jad Boutasboultaoui CV.pdf" download="Jad_Boutasboultaoui_CV.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                <p><a href="images/SPIPA7OS/Lebenslauf_von_Jad_Boutasboultaoui..pdf" download="Jad_Boutasboultaoui_CV.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
               </div>
 	          </div>
 	        </div>
@@ -167,7 +269,7 @@ in design and business.</p>
     		</div>
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="images/SPIPA7OS/Jad Boutasboultaoui CV.pdf" download="Jad_Boutasboultaoui_CV.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="images/SPIPA7OS/Lebenslauf_von_Jad_Boutasboultaoui..pdf" download="Jad_Boutasboultaoui_CV.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -202,11 +304,36 @@ in design and business.</p>
 								<h3 class="mb-5">Phtography</h3>
 							</div>
 						</a>
+					</div>	
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Product Strategy</h3>
+							</div>
+						</a>
+					</div>	<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Web Design</h3>
+							</div>
+						</a>
 					</div>
-				
-
-					
-					
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-flasks"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Phtography</h3>
+							</div>
+						</a>
+					</div>	
 					<div class="col-md-4 text-center d-flex ftco-animate">
 						<a href="#" class="services-1">
 							<span class="icon">
